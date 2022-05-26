@@ -1,0 +1,145 @@
+/* PC */
+@media (min-width: 1024px) {
+
+}
+
+/* tablet CSS */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+
+}
+
+/* tablet vs mobile */
+@media (max-width: 1023px) {
+    .places-content .btn {
+        padding: 15px 14px;
+    }
+
+    .contact-input .send-btn {
+        padding: 15px 18px;
+    }
+    .contact-input .message,
+    .name-email .email,
+    .name-email .name {
+        padding: 14px 8px;
+        border: 1px solid #333;
+    }
+
+    .contact-information .contact-location {
+        line-height: 2;
+    }
+    .footer-contact .footer-icon {
+        font-size: 44px;
+    }
+   
+    #header #nav li {
+        padding-bottom: 5px;
+    }
+
+}
+
+/* CSS mobile */
+@media (max-width: 739px) {
+    .s-col-full {
+        width: 100%;
+    }
+
+    #header {
+        overflow: hidden;
+    }
+    #header #nav {
+        display: block;
+       
+    }
+    
+    #header > #nav > li {
+        display: block;
+        line-height: 48px;
+    }
+    
+    #header #nav > li:first-child {
+        display: inline-block;
+    }
+    #header .search-btn {
+        display: none;
+    }
+    #nav li a {
+        display: block;
+        padding: 0 23px;
+        width: 100%;
+    }
+    #nav .sub-nav {
+        position: initial;
+        background-color: #333;
+    }
+    .mobile-menu-btn {
+    display: block;
+    float: right;
+    color: #fff;
+    font-size: 15px;
+    padding: 15px 23px;
+    }
+    #header .mobile-menu-btn:hover {
+        background-color: #ccc;
+        color: #000;
+    }
+
+    #nav .sub-nav li a {
+        color: #fff;
+    }
+
+    #nav .sub-nav li {
+        padding-left: 20px;
+        line-height: 46px;
+    }
+    #nav .sub-nav li:hover a {
+        background-color: #ccc;
+        color: #000;
+    }
+    
+    #contents .contents-member {
+        display: block;
+    }
+
+    #contents .tour-places {
+        display: block;
+    }
+
+    .tour-places .places-item {
+        width: 100%;
+        margin-top: 16px;
+    }
+
+    .tour-places .places-item:not(:first-child) {
+        margin-left: 0;
+    }
+    #contents-contact .contact-information {
+        display: block;
+    }
+    .places-content .btn {
+        width: 100%;
+        text-align: center;
+    }
+   
+    .contact-input .name-email {
+        display: block;
+    }
+
+    .name-email .email {
+    margin-left: 0px;
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid #333;
+    }
+    .name-email .name {
+    border: 1px solid #333;
+    }
+    .contact-input .message {
+    border: 1px solid #333;
+
+    }
+    .contact-input .send-btn  {
+        width: 100%;
+        text-align: center;
+    }
+}

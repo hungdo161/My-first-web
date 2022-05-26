@@ -1,0 +1,492 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.width {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px;
+    max-width: 100%;
+
+}
+.row {
+    margin-left: -16px;
+    margin-right: -16px;
+}
+.col {
+    width: 100%;
+}
+.col-half {
+    width: 50%;
+}
+.col-thrid {
+    width: 33.333333%;
+}
+#header {
+background-color: #000;
+height: 47px;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+z-index: 1;
+max-width: 100%;
+}
+#header #nav {
+    padding: 0;
+    font-size: 15px;
+    display: inline-block;
+    line-height: 47px;
+}
+#header #nav > li{
+    display: inline-block;
+
+}
+#header #nav li {
+    list-style: none;
+    margin-left: 0;
+    position: relative;
+}
+
+#nav > li > a {
+text-transform: uppercase;
+color: #fff;
+padding: 15px 23px;
+}
+.sub-nav li:hover ,
+#nav > li:hover > a {
+    background-color: #ccc;
+    cursor: pointer;
+    color: #000;
+}
+#nav li:hover .sub-nav {
+    display: block;
+}
+
+#nav li a {
+text-decoration: none ;
+}
+#nav .sub-nav {
+display: none;
+position: absolute;
+padding-left: 0;
+min-width: 160px;
+background-color: #fff;
+margin-top: 15px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+top: 32px
+
+}
+
+#nav .sub-nav li {
+    padding-left: 12px;
+    line-height: 38px
+
+}
+
+#nav .sub-nav li a {
+color: #000;
+/* background-color: #fff; */
+}
+#header .mobile-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.mobile-menu-btn {
+    display: none;
+}
+#header .search-btn {
+    float: right;
+    color: #fff;
+    font-size: 15px;
+    padding: 15px 23px;
+}
+#header .search-btn:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#slider {
+background: url('/the_band2/access2/img/slider1/ny.jpg') top center / cover no-repeat;
+padding-top: 50%;
+margin-top: 47px;
+width: 100%;
+max-width: 100%;
+position: relative;
+}
+#slider .slider-text {
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 48px;
+    width: 100%;
+    text-align: center;
+}
+
+#slider .slider-content {
+line-height: 36px;
+padding: 10px 0;
+font-weight: 500;
+font-size: 24px;
+}
+
+#slider .slider-paragraph {
+font-size: 15px;
+margin-top: 15px;
+
+}
+/* contents CSS */
+#contents {
+
+}
+/* contents-the band */
+#contents .title-container {
+    text-align: center;
+    max-width: 100%;
+}
+#contents .contents-title {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 10px 0;
+    font-weight: 500;
+    letter-spacing: 4px;
+
+}
+
+#contents .contents-text {
+font-size: 15px;
+margin: 15px 0;
+font-style: italic;
+color: #757575;
+}
+#contents .contents-paragraph {
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: justify;
+    margin: 15px 0;
+}
+#contents .contents-member {
+    display: flex;
+    padding: 32px 0;
+
+}
+
+#contents .member-list {
+    text-align: center;
+
+}
+
+#contents .member-name {
+    font-size: 15px;
+    margin: 15px 0;
+}
+#contents .member-img {
+width: 60%;
+border-radius: 5px;
+margin-bottom: 15px;
+}
+
+/* contents-tour date */
+#contents #contents-tour {
+    background-color: #000;
+}
+
+#contents .tour-container {
+color:#fff ;
+}
+.tour-container .teckets-quantity {
+    background-color: #fff;
+    color: #757575;
+    list-style: none;
+}
+.tour-container .teckets-quantity li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ccc;
+}
+
+.teckets-quantity .sold-out {
+    margin-left: 16px;
+    background-color: #f44336;
+    padding: 3px;
+    color: #fff;
+}
+.teckets-quantity .quantity {
+    float: right;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    padding: 4px 8px;
+    position: relative;
+    top: -4px;
+}
+
+#contents .tour-places {
+    display: flex;
+    padding: 32px 0;
+    max-width: 100%;
+    /* margin: 0 -16px; */
+
+}
+
+.tour-places .places-item:not(:first-child) {
+   margin-left: 16px;
+}
+.tour-places .places-item {
+
+
+}
+
+.places-item .places-content {
+background-color: #fff;
+color: #000;
+padding: 0 16px;
+margin-top: -4px;
+
+}
+
+.places-content .place {
+    font-size: 15px;
+    padding: 15px 0;
+}
+
+.places-content .place-date{
+margin-bottom: 15px;
+opacity: 0.6;
+
+}
+
+.places-content .place-text{
+margin-bottom: 15px;
+line-height: 1.5;
+
+}
+
+.places-content .btn{
+    border: none;
+    padding: 11px 14px;
+    font-size: 15px;
+    background-color: #000;
+    color: #fff;
+    margin-bottom: 16px;
+}
+.contact-input .send-btn:hover,
+.places-content .btn:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+.places-item .place-img {
+   width: 100%;
+   height: auto;
+}
+
+/* contact-Css */
+#contents-contact .contact-information {
+    display: flex;
+    padding: 32px 0;
+}
+
+.contact-information .contact-location {
+    font-size: 18px;
+    list-style: none;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+
+.contact-location .location-icon {
+padding-right: 16px;
+}
+
+#contents-contact .contact-input {
+
+}
+
+.contact-input .name-email {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+   
+}
+    
+.name-email .name {
+    padding: 8px 5px;
+    margin-right: 8px;
+    width: 100%;
+    max-width: 100%;
+
+}
+
+.name-email .email {
+    padding: 8px 6px;
+    margin-left: 8px;
+
+}
+.contact-input .message {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-top: 8px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.contact-input .send-btn {
+    float: right;
+    border: none;
+    padding: 11px 18px;
+    font-size: 15px;
+    background-color: #000;
+    color: #fff;
+    margin: 16px 0;
+    text-transform: uppercase;
+}
+
+
+#footer {
+}
+
+#footer .footer-map {
+    width: 100%;
+    height: auto;
+}
+
+#footer .footer-contact {
+    display: block;
+    text-align: center;
+    padding: 64px 16px;  
+    color: #757575;
+}
+.footer-contact .footer-icon {
+    font-size: 24px;
+}
+.footer-contact i:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.footer-contact .footer-text {
+margin: 15px 0;
+
+}
+.footer-contact .footer-text a {
+    color:#757575 ;
+    text-decoration: underline;
+}
+
+/* buy teckets- css Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.modal.open {
+    display: flex;
+}
+
+.modal .modal-container {
+background-color: #fff;
+width: 900px;
+width: calc(100% - 32px);
+min-height: 200px;
+animation: modalFadeIn ease 0.4s;
+}
+
+.modal-container .close-btn {
+    float: right;
+    padding: 12px 11px;
+    font-size: 24px;
+    color: #fff;
+
+}
+.modal-container .modal-header {
+    background-color: #009688;
+    font-size: 30px;
+    padding: 47px 16px;
+    text-align: center;
+    letter-spacing: 4px;
+    color: #fff;
+}
+
+.modal-container .modal-body {
+padding: 0.15px 16px;
+}
+
+.modal-body .modal-label {
+    display: block;
+    font-size: 15px;
+    margin: 15px 0;
+ 
+
+}
+
+.modal-body .modal-input {
+    padding: 12px 8px;
+    border: 1px solid #ccc;
+}
+
+.modal-body .pay-btn {
+    font-size: 15px;
+    margin: 15px 0;
+    padding: 16px 8px;
+    background-color: #009688;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+}
+
+.modal-body .modal-text {
+    float: right;
+    margin: 15px 0;
+    color: #000;
+}
+.modal-body .modal-text a {
+color: #2196F3 ;
+
+}
+
+.modal-body .close-button {
+border: none;
+font-size: 15px;
+padding: 11px 16px;
+margin: 16px 0 ;
+background-color: #f44336;
+color: #fff;
+}
+.modal-container .close-btn:hover ,
+.modal-body .pay-btn:hover,
+.modal-body .close-button:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+@keyframes modalFadeIn {
+    from {
+        transform: translateY(-140px);
+        opacity: 0;
+
+    }
+
+    To {
+        transform: translateY(0);
+        opacity: 1;
+
+    }
+}
+
